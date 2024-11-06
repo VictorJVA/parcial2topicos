@@ -14,8 +14,8 @@ def factorial(n):
 def get_factorial(n):
     n_factorial = factorial(n)
     if n_factorial is None:
-        return jsonify(error="Error: El número no puede ser negativo"),
+        return "El número no es válido"
     else:
-        return jsonify(number=n, factorial=n_factorial)
+        return f"El factorial es {n_factorial}"
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
