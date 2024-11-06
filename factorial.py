@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 def factorial(n):
     if n < 0:
-        return "Numeros mayores o iguales a 0"
+        return "Error: Tu numero no puede ser negativo"
     elif n == 1 or n == 0:
         return 1
     else:
